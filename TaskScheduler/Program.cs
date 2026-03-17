@@ -15,7 +15,15 @@ List<TodoTask> tasks = new List<TodoTask>
 
 
 };
+Console.WriteLine("=== 정렬 전 ===");
+ 
 foreach (var task in tasks)
+{
+    Console.WriteLine(task);
+}
+tasks.Sort();
+Console.WriteLine("=== 정렬 후 ===");
+foreach(var task in tasks)
 {
     Console.WriteLine(task);
 }
@@ -36,11 +44,19 @@ class TodoTask : IComparable<TodoTask>
 
     public int CompareTo(TodoTask other)
     {
-        if (other == null)
+        if (other == null) return 1;
+        int result = other.Priority.CompareTo(this.Priority);
+
+        if (result == 0)
         {
-            return 1;  // null보다 항상 큼
+            result = this.DueDate.CompareTo(other.DueDate);
         }
-        return Priority.CompareTo(other.Priority);
+        if (result == 0)
+        {
+            result = this.Title.CompareTo(other.Title);
+        }
+
+        return result;
     }
 
     public override string ToString()
