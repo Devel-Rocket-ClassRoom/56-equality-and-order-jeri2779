@@ -6,7 +6,10 @@
 
 ## 요구사항
 
-- `AuctionItem` 클래스에 `Name` (string), `CurrentBid` (int, 현재 입찰가), `BidCount` (int, 입찰 횟수), `Category` (string) 필드를 포함
+- `AuctionItem` 클래스에 `Name` (string), 
+- `CurrentBid` (int, 현재 입찰가), 
+- `BidCount` (int, 입찰 횟수), 
+- `Category` (string) 필드를 포함
 - `BidComparer : Comparer<AuctionItem>`: 현재 입찰가 내림차순 → 이름 오름차순으로 정렬
 - `Comparer<AuctionItem>.Create()` 람다로 입찰 횟수 내림차순 비교기를 생성
 - 경매 아이템 목록을 두 가지 방식으로 정렬하여 출력

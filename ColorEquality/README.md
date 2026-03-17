@@ -9,7 +9,8 @@
 - `Color` 클래스에 `R`, `G`, `B` (int, 0~255) 속성을 포함
 - `IEquatable<Color>` 인터페이스를 구현하여 값 동등성 비교 지원
 - `object.Equals()`와 `GetHashCode()`도 올바르게 오버라이드
-- `IsSimilar(Color other, int threshold)` 메서드 구현: 각 RGB 채널의 절대 차이가 모두 threshold 이하이면 유사한 색상으로 판정
+- `IsSimilar(Color other, int threshold)` 메서드 구현: 
+- 각 RGB 채널의 절대 차이가 모두 threshold 이하이면 유사한 색상으로 판정
 - `ToString()` 오버라이드: `"RGB(R, G, B)"` 형식으로 출력
 - `HashSet<Color>`에서 중복 색상을 제거할 수 있어야 함
 

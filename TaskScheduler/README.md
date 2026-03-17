@@ -8,7 +8,11 @@
 
 ## 요구사항
 
-- `TodoTask` 클래스에 `Title` (string), `Priority` (int, 높을수록 긴급), `DueDate` (string, "YYYY-MM-DD" 형식), `IsCompleted` (bool) 필드를 포함
+- `TodoTask` 클래스에 
+- `Title` (string), 
+- `Priority` (int, 높을수록 긴급), 
+- `DueDate` (string, "YYYY-MM-DD" 형식), 
+- `IsCompleted` (bool) 필드를 포함
 - `IComparable<TodoTask>` 인터페이스를 구현하여 3중 기준으로 정렬
   - 1차: Priority 내림차순 (높은 우선순위가 먼저)
   - 2차: DueDate 오름차순 (마감일이 빠른 것이 먼저)

@@ -6,7 +6,9 @@
 
 ## 요구사항
 
-- `Item` 클래스에 `Name` (string), `Type` (string: "무기", "방어구", "소비" 등), `Grade` (string: "일반", "희귀", "전설" 등) 필드를 포함
+- `Item` 클래스에 `Name` (string), 
+- `Type` (string: "무기", "방어구", "소비" 등), 
+- `Grade` (string: "일반", "희귀", "전설" 등) 필드를 포함
 - `ItemTypeComparer : EqualityComparer<Item>`: Type만 비교하여 같은 타입이면 동등한 것으로 판정
 - `ItemGradeComparer : EqualityComparer<Item>`: Grade만 비교하여 같은 등급이면 동등한 것으로 판정
 - 같은 아이템 리스트를 두 가지 비교기로 각각 Dictionary에 넣어 그룹핑/조회 시연
